@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="TicTacToeStyle.css" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="starting">
+      <p>Rules :</p>
+      <ul>
+        <li>Player 1 play with <span class="sticker">'X'</span></li>
+        <li>Player 2 play with <span class="sticker">'O'</span></li>
+        <li>Three same symbols in a line wins</li>
+        <li>Lines can be horizontal, vertical, or diagonal</li>
+      </ul>
+      <button id="strtBtn">Play</button>
+    </div>
+    <div class="winnerContainer">
+      <p id="wish"></p>
+      <br>
+      <p id="winnerName"></p>
+      <br>
+      <div>
+        <button class="buttons" id="playAgain">Play Again</button>
+        <button class="buttons" id="showGame">Show Game</button>
+      </div>
+    </div>
+    <main class="main">
+      <h1>Tic Tac Toe</h1>
+      <div class="container">
+        <div class="game">
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
+      </div>
+      <button id="rstBtn">Reset</button>
+    </main>
+    <script src="TicTacToeLogic.js"></script>
+  </body>
+</html>
