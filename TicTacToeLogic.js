@@ -128,8 +128,10 @@ const checkWinner = () => {
     if(posVal1 != "" && posVal2 != "" && posVal3 != "") {
       if(posVal1===posVal2 && posVal2===posVal3) {
         showWinner(posVal1);
+        return true;
       }
     }
   }
+  return false;
 };
 rstBtn.addEventListener("click",resetGame );
